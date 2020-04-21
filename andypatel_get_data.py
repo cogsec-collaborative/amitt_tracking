@@ -133,9 +133,9 @@ if __name__ == '__main__':
 # Create a separate save directory for each search query
 # Since search queries can be a whole sentence, we'll check the length
 # and simply number it if the query is overly long
-    if not os.path.exists("data"):
-      os.makedirs("data")
-    save_dir = "data/"
+    if not os.path.exists("data/twitter"):
+      os.makedirs("data/twitter")
+    save_dir = "data/twitter/"
     if len(target) < 30:
       save_dir += target.replace(" ", "_")
     else:
